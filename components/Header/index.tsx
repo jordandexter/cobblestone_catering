@@ -6,7 +6,7 @@ export default function Header() {
         <header className="fixed top-4 left-0 right-0 z-50 pointer-events-none ">
             <div className="mx-auto w-full max-w-400 px-4 flex items-center justify-between">
                 <div className="pointer-events-auto flex items-center gap-3">
-                    <div className="bg-white/90 backdrop-blur rounded-md p-2 shadow">
+                    <div className="bg-accent-yellow backdrop-blur rounded-md p-2 shadow">
                         <Coffee size={28} className="text-slate-800" />
                     </div>
                 </div>

@@ -1,11 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+  --color-accent-yellow: #e9dbae;
+  --color-accent-yellow-hover: #e9dbaeee;
+}
+
 :root {
   --background: #ffffff00;
   --foreground: #17171700;
 }
-
-/* theme block removed — using CSS custom properties directly */
 
 @media (prefers-color-scheme: dark) {
   :root {

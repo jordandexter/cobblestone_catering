@@ -18,28 +18,31 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex min-h-screen items-center justify-center font-sans pt-20">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center gap-4 sm:items-start max-w-400">
+    <div className="flex min-h-screen justify-center font-sans pt-20">
+      <button className="bg-accent-yellow hover:bg-accent-yellow-hover text-gray-700 font-bold px-5 py-2 rounded-md h-10 w-50 absolute bottom-4 translate-y-1/2 z-999"
+        style={{
+        }}
+      >
+        Book Now
+      </button>
 
-        <section className="w-full rounded-[10px] overflow-hidden h-[60vh]">
-          <div className="grid grid-cols-1 md:grid-cols-2 h-full">
-            <div className="flex flex-col justify-center items-start gap-4 p-6 md:p-8 bg-black/60 text-white">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl max-w-100 font-bold">MAKING UNFORGETABLE LOOK EASY</h1>
-              <div className="inline-block px-4 py-2 rounded-md text-2xl sm:text-3xl font-semibold" aria-live="polite">{placeholder}</div>
+      <main className="flex w-full flex-col gap-4 max-w-400">
+        <section className="relative w-full rounded-[10px] h-[60vh] min-h-[calc(100vh-6rem)]"
+          style={{
+            backgroundImage: "url('food.jpg')"
+          }}>
+          <div className='absolute inset-0 pointer-event-none bg-black/10 z-10' />
+          <div className="relative flex justify-start items-end h-full z-20 sticky">
+            <div className="flex flex-col justify-center items-start gap-4 p-6 md:p-8 text-white">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#e9dab0] max-w-100 font-bold">MAKE UNFORGETABLE LOOK EASY.</h1>
               <div className="mt-4">
-                <button className="bg-blue-500 text-white px-5 py-2 rounded-md hover:bg-blue-600"
+                <button className="bg-accent-yellow hover:bg-accent-yellow-hover text-gray-700 font-bold px-5 py-2 rounded-md"
                   style={{
-                    boxShadow: '0px 0px 15px 20px rgba(0,0,50,100)'
                   }}
                 >
                   Book Now
                 </button>
               </div>
-              <p className="text-sm text-gray-200 mt-2">Questions? Give us a call at 1234568902</p>
-            </div>
-
-            <div className="p-2">
-              <img src="/food.jpg" alt="food" className="object-cover w-full h-full rounded-tl-[50px] rounded-br-[50px] rounded-bl-[10px] rounded-tr-[10px]" />
             </div>
           </div>
         </section>
